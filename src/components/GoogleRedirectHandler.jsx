@@ -11,7 +11,7 @@ const GoogleCallbackPage = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:8000/user/api/v1/auth/google/callback/', {
+            const response = await fetch('https://rental-backend-4zh6.onrender.com/user/api/v1/auth/google/callback/', {
                 method: 'GET',
                 headers: { 'Content-Type': 'application/json' },
             });

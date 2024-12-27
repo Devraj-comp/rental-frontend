@@ -92,7 +92,7 @@ export const ExploreCars = () => {
 
     // fetch cars
     useEffect(() => {
-      fetch('http://127.0.0.1:8000/api/cars/', {
+      fetch('https://rental-backend-4zh6.onrender.com/api/cars/', {
           method: 'GET',
           headers: {
               'Content-Type': 'application/json',
@@ -144,7 +144,7 @@ export const ExploreCars = () => {
           return;
         }
         try{
-          const response = await fetch("http://localhost:8000/api/bookings/create/",{
+          const response = await fetch("https://rental-backend-4zh6.onrender.com/api/bookings/create/",{
             method: 'POST',
             headers: {
               "Authorization": `JWT ${token}`,

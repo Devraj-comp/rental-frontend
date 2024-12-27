@@ -23,7 +23,7 @@ const TopNav = () => {
   useEffect(() => {
     const fetchNotifications = async() => {
       try{
-        const response = await fetch('http://127.0.0.1:8000/notification/notifications/',{
+        const response = await fetch('https://rental-backend-4zh6.onrender.com/notification/notifications/',{
           method: 'GET',
           headers: {
             'Authorization': `JWT ${access}`,
@@ -46,7 +46,7 @@ const TopNav = () => {
   // include the mark notification 
   const markNotificationAsRead = async(notificationId) => {
     try{
-      await fetch(`http://127.0.0.1:8000/notification/notifications/${notificationId}/read`,{
+      await fetch(`https://rental-backend-4zh6.onrender.com/notification/notifications/${notificationId}/read`,{
         method: 'PATCH',
         headers: {
           'Authorization': `JWT ${access}`,

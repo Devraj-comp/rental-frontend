@@ -50,7 +50,7 @@ export const SignUpPop = ({onClose, toggleLogin}) => {
             role: role
         };
         try{
-            const response = await fetch('http://127.0.0.1:8000/user/create-user/', {
+            const response = await fetch('hhttps://rental-backend-4zh6.onrender.com/user/create-user/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ export const SignUpPop = ({onClose, toggleLogin}) => {
         try {
             const GOOGLE_AUTH_URL = 'https://accounts.google.com/o/oauth2/v2/auth';
             const CLIENT_ID = '303729315971-09bic4sesir7a73i3013cj0tbvk98kl0.apps.googleusercontent.com';
-            const REDIRECT_URI = 'http://localhost:8000/user/api/v1/auth/google/callback/';
+            const REDIRECT_URI = 'https://rental-backend-4zh6.onrender.com/user/api/v1/auth/google/callback/';
     
             const scope = [
                 'https://www.googleapis.com/auth/userinfo.email',

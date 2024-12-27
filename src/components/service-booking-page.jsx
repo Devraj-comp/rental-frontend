@@ -33,7 +33,7 @@ export const ServiceBookingPage = () => {
         }
 
         try {
-            const response = await fetch("http://127.0.0.1:8000/api/serviceBookings/create/", {
+            const response = await fetch("https://rental-backend-4zh6.onrender.com/api/serviceBookings/create/", {
                 method: 'POST',
                 headers: {
                     "Authorization": `JWT ${token}`,

@@ -98,7 +98,7 @@ import car06 from "../images/car-06.png";
 //       make: "Audi",
 //       fuel_type: "Petrol",
 //       seat_capacity: 4,
-//       image: 'http://localhost:8000/media/cars/toyota-corrola_sttbYkQ.jpg',
+//       image: 'https://rental-backend-4zh6.onrender.com/media/cars/toyota-corrola_sttbYkQ.jpg',
 //     },
 //       total_price: 89
 //   },
@@ -109,7 +109,7 @@ import car06 from "../images/car-06.png";
 //       make: "Audi",
 //       fuel_type: "Petrol",
 //       seat_capacity: 4,
-//       image: 'http://localhost:8000/media/cars/toyota-corrola_sttbYkQ.jpg',
+//       image: 'https://rental-backend-4zh6.onrender.com/media/cars/toyota-corrola_sttbYkQ.jpg',
 //     },
 //       total_price: 89
 //   },  
@@ -120,7 +120,7 @@ import car06 from "../images/car-06.png";
 //       make: "Audi",
 //       fuel_type: "Petrol",
 //       seat_capacity: 4,
-//       image: 'http://localhost:8000/media/cars/toyota-corrola_sttbYkQ.jpg',
+//       image: 'https://rental-backend-4zh6.onrender.com/media/cars/toyota-corrola_sttbYkQ.jpg',
 //     },
 //       total_price: 89,
     
@@ -132,7 +132,7 @@ import car06 from "../images/car-06.png";
 //       make: "Audi",
 //       fuel_type: "Petrol",
 //       seat_capacity: 4,
-//       image: 'http://localhost:8000/media/cars/toyota-corrola_sttbYkQ.jpg',
+//       image: 'https://rental-backend-4zh6.onrender.com/media/cars/toyota-corrola_sttbYkQ.jpg',
 //     },
 //       total_price: 89,
     
@@ -144,7 +144,7 @@ import car06 from "../images/car-06.png";
 //       make: "Audi",
 //       fuel_type: "Petrol",
 //       seat_capacity: 4,
-//       image: 'http://localhost:8000/media/cars/toyota-corrola_sttbYkQ.jpg',
+//       image: 'https://rental-backend-4zh6.onrender.com/media/cars/toyota-corrola_sttbYkQ.jpg',
 //     },
 //       total_price: 89,
     
@@ -156,7 +156,7 @@ import car06 from "../images/car-06.png";
 //       make: "Audi",
 //       fuel_type: "Petrol",
 //       seat_capacity: 4,
-//       image: 'http://localhost:8000/media/cars/toyota-corrola_sttbYkQ.jpg',
+//       image: 'https://rental-backend-4zh6.onrender.com/media/cars/toyota-corrola_sttbYkQ.jpg',
 //     },
 //       total_price: 89,
     
@@ -168,7 +168,7 @@ import car06 from "../images/car-06.png";
 //       make: "Audi",
 //       fuel_type: "Petrol",
 //       seat_capacity: 4,
-//       image: 'http://localhost:8000/media/cars/toyota-corrola_sttbYkQ.jpg',
+//       image: 'https://rental-backend-4zh6.onrender.com/media/cars/toyota-corrola_sttbYkQ.jpg',
 //     },
 //       total_price: 89,
     
@@ -180,7 +180,7 @@ import car06 from "../images/car-06.png";
 //       make: "Audi",
 //       fuel_type: "Petrol",
 //       seat_capacity: 4,
-//       image: 'http://localhost:8000/media/cars/toyota-corrola_sttbYkQ.jpg',
+//       image: 'https://rental-backend-4zh6.onrender.com/media/cars/toyota-corrola_sttbYkQ.jpg',
 //     },
 //       total_price: 89,
     
@@ -192,7 +192,7 @@ import car06 from "../images/car-06.png";
 //       make: "Audi",
 //       fuel_type: "Petrol",
 //       seat_capacity: 4,
-//       image: 'http://localhost:8000/media/cars/toyota-corrola_sttbYkQ.jpg',
+//       image: 'https://rental-backend-4zh6.onrender.com/media/cars/toyota-corrola_sttbYkQ.jpg',
 //     },
 //       total_price: 89,
     
@@ -203,7 +203,7 @@ const bookingCars = async () => {
   const token = localStorage.getItem("access_token");
   const role = localStorage.getItem("role");
   
-  const fetch_detail_url = role === 'admin' ? "http://localhost:8000/api/bookings/detail": "http://localhost:8000/api/bookings/"
+  const fetch_detail_url = role === 'admin' ? "https://rental-backend-4zh6.onrender.com/api/bookings/detail": "https://rental-backend-4zh6.onrender.com/api/bookings/"
   
   try {
     const response = await fetch(fetch_detail_url, {

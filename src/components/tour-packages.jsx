@@ -105,7 +105,7 @@ export const TourPackages = () => {
     };
     // fetch packages
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/packages/', {
+        fetch('https://rental-backend-4zh6.onrender.com/api/packages/', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -135,7 +135,7 @@ export const TourPackages = () => {
         }
         try {
             const response = await fetch(
-              `http://localhost:8000/api/available-cars/?start_date=${startDate}&end_date=${endDate}`
+              `https://rental-backend-4zh6.onrender.com/api/available-cars/?start_date=${startDate}&end_date=${endDate}`
             );
             if (!response.ok) {
               throw new Error("Failed to fetch available vehicles.");

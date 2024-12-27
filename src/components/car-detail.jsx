@@ -6,7 +6,7 @@ const CarDetail = () => {
   const [car, setCar] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/cars/${carId}`)
+    fetch(`https://rental-backend-4zh6.onrender.com/api/cars/${carId}`)
       .then((response) => response.json())
       .then((data) => setCar(data))
       .catch((error) => console.error('Error fetching car details:', error));

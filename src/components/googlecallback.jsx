@@ -10,7 +10,7 @@ const GoogleCallback = () => {
 
         if (authCode) {
             // Send authCode to the backend to exchange for tokens and create user
-            fetch('http://localhost:8000/user/api/v1/auth/google-login/', {
+            fetch('https://rental-backend-4zh6.onrender.com/user/api/v1/auth/google-login/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

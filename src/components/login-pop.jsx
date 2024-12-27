@@ -37,7 +37,7 @@ export const LoginPop = ({ onClose, toggleSignUp }) => {
         const data = { email, password };
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/user/api/token/', {
+            const response = await fetch('https://rental-backend-4zh6.onrender.com/user/api/token/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ export const LoginPop = ({ onClose, toggleSignUp }) => {
                 localStorage.setItem('access_token', access);
                 localStorage.setItem('refresh_token', refresh);
 
-                const userResponse = await fetch('http://localhost:8000/user/current/', {
+                const userResponse = await fetch('https://rental-backend-4zh6.onrender.com/user/current/', {
                     method: 'GET',
                     headers: {
                         'Authorization': `JWT ${access}`,
@@ -85,7 +85,7 @@ export const LoginPop = ({ onClose, toggleSignUp }) => {
     
         if (code) {
             try {
-                const response = await fetch('http://localhost:8000/user/google-login', {
+                const response = await fetch('https://rental-backend-4zh6.onrender.com/user/google-login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -119,7 +119,7 @@ export const LoginPop = ({ onClose, toggleSignUp }) => {
     
         if (code) {
             try {
-                const response = await fetch('http://localhost:8000/user/api/v1/auth/google/callback/', {
+                const response = await fetch('https://rental-backend-4zh6.onrender.com/user/api/v1/auth/google/callback/', {
                     method: 'GET',
                     headers: { 'Content-Type': 'application/json' },
                     credentials: 'include',
@@ -155,7 +155,7 @@ export const LoginPop = ({ onClose, toggleSignUp }) => {
         try {
             const GOOGLE_AUTH_URL = 'https://accounts.google.com/o/oauth2/v2/auth';
             const CLIENT_ID = '303729315971-09bic4sesir7a73i3013cj0tbvk98kl0.apps.googleusercontent.com';
-            const REDIRECT_URI = 'http://localhost:8000/user/api/v1/auth/google/callback/';
+            const REDIRECT_URI = 'https://rental-backend-4zh6.onrender.com/user/api/v1/auth/google/callback/';
     
             const scope = [
                 'https://www.googleapis.com/auth/userinfo.email',
