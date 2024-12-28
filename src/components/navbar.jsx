@@ -54,7 +54,6 @@ export const Navbar = () => {
       <h1 className="w-full text-3xl font-bold text-[#00df9a]">RIGHT-RENTAL</h1>
       <ul className="hidden md:flex cursor-pointer">
         <li className="p-4" onClick={() => handleNavigation("/")}>Home</li>
-        <li className="p-4 whitespace-nowrap" onClick={() => handleNavigation("/hire")}>Hire a Driver</li>
         <li className="p-4" onClick={() => handleNavigation("/partner")}>Partner</li>
         <li className="p-4" onClick={() => handleNavigation("/blog")}>Blog</li>
         <li className="p-4" onClick={() => handleNavigation("/about")}>About</li>
