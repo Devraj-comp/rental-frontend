@@ -14,8 +14,8 @@ const TourPackageOrdersTable = () => {
         const fetchOrders = async () => {
             const fetchDetailUrl =
                 role === "admin"
-                    ? "http://127.0.0.1:8000/api/tourBookings/detail"
-                    : "http://127.0.0.1:8000/api/tourBookings/";
+                    ? "https://rental-backend-4zh6.onrender.com/api/tourBookings/detail"
+                    : "https://rental-backend-4zh6.onrender.com/api/tourBookings/";
 
             try {
                 const response = await fetch(fetchDetailUrl, {
@@ -58,7 +58,7 @@ const TourPackageOrdersTable = () => {
     const handleUpdateOrderStatus = async (orderId, newStatus) => {
         try {
             const response = await fetch(
-                `http://localhost:8000/api/tourBookings/${orderId}/updatestatus/`,
+                `https://rental-backend-4zh6.onrender.com/api/tourBookings/${orderId}/updatestatus/`,
                 {
                     method: "PATCH",
                     headers: {
