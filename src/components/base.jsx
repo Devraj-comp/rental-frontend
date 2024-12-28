@@ -3,10 +3,7 @@ import { ReactTyped } from "react-typed";
 import BgImage from "../assets/car21.jpg";
 import CartCar from "../assets/cart-car-1.jpg";
 import { useNavigate } from "react-router-dom";
-import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import { FaCalendarAlt } from "react-icons/fa";
+// import "react-datepicker/dist/react-datepicker.css";
 
 
 

@@ -5,9 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { Mdpersonr, MdArrowBack,MdArrowForward  } from "react-icons/md";
 import { IoIosPerson } from "react-icons/io";
 import { LoginSignupToggle } from "./loginsignup-pop";
-import { Navigate, useNavigate } from "react-router-dom";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import { useNavigate } from "react-router-dom";
+// import "react-datepicker/dist/react-datepicker.css";
 
 
 const ReverseArrow = () => (
